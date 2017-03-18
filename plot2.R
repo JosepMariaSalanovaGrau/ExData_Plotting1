@@ -7,7 +7,7 @@ TimeFormat <-strptime(paste(DHPC_data_new$Date, DHPC_data_new$Time, sep=" "),"%d
 DHPC_data_new <- cbind(TimeFormat, DHPC_data_new)
 
 #plot
-png(filename="plot2.png")
+png(filename="plot2.png",width=480, height=480)
 #2
 plot(DHPC_data_new$TimeFormat, DHPC_data_new$Global_active_power, type="l", col="black", xlab="", ylab="Global Active Power (kilowatts)")
 dev.off()

@@ -7,7 +7,7 @@ TimeFormat <-strptime(paste(DHPC_data_new$Date, DHPC_data_new$Time, sep=" "),"%d
 DHPC_data_new <- cbind(TimeFormat, DHPC_data_new)
 
 #plot
-png(filename="plot4.png")
+png(filename="plot4.png",width=480, height=480)
 #4
 labels <- c("Sub_metering_1","Sub_metering_2","Sub_metering_3")
 columnlines <- c("black","red","blue")
